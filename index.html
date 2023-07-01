@@ -16,8 +16,8 @@
         function playGame(playerChoice, computerChoice){
             let result = '';
             playerChoice = playerChoice.toLowerCase();
-            console.log('pc '+playerChoice);
-            console.log('cc '+computerChoice);
+            console.log('player choice: '+playerChoice);
+            console.log('computer choice: '+computerChoice);
 
             if(playerChoice == computerChoice)
                 result = 'Draw the match'
@@ -49,10 +49,15 @@
             return result;
         }
 
-        let pc = 'rOck';
-        let cc = getComputerChoice();
-    
-        console.log(playGame(pc, cc));
+        function game(pc){
+            for(let i=0; i<5; i++){
+                let cc = getComputerChoice();
+                console.log(playGame(pc,cc));
+            }
+        }
+
+        let plrChoice = prompt('Enter rock,paper or scissor');
+        game(plrChoice);
 
     </script>
 </body>
