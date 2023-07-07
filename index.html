@@ -3,62 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RPC</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
 </head>
 <body>
-    <script>
-        function getComputerChoice(){
-            let choices = ['rock', 'paper', 'scissor'];
-            let choice = choices[Math.floor(Math.random() * choices.length)];
-            return choice;
-        }
-
-        function playGame(playerChoice, computerChoice){
-            let result = '';
-            playerChoice = playerChoice.toLowerCase();
-            console.log('player choice: '+playerChoice);
-            console.log('computer choice: '+computerChoice);
-
-            if(playerChoice == computerChoice)
-                result = 'Draw the match'
-       
-            else if(playerChoice == 'rock')
-            {
-                if(computerChoice == 'paper')
-                    result = `You Lose, ${computerChoice} beats ${playerChoice}`;
-                else
-                    result = `You Win, ${playerChoice} beats ${computerChoice}`;
-            }   
-
-            else if(playerChoice == 'paper')
-            {
-                if(computerChoice == 'scissor')
-                    result = `You Lose, ${computerChoice} beats ${playerChoice}`;
-                else
-                    result = `You Win, ${playerChoice} beats ${computerChoice}`;
-            } 
-
-            else if(playerChoice == 'scissor')
-            {
-                if(computerChoice == 'rock')
-                    result = `You Lose, ${computerChoice} beats ${playerChoice}`;
-                else
-                    result = `You Win, ${playerChoice} beats ${computerChoice}`;
-            } 
-
-            return result;
-        }
-
-        function game(pc){
-            for(let i=0; i<5; i++){
-                let cc = getComputerChoice();
-                console.log(playGame(pc,cc));
-            }
-        }
-
-        let plrChoice = prompt('Enter rock,paper or scissor');
-        game(plrChoice);
-
-    </script>
+    <h1 class="title">ROCK PAYPER C-SER</h1>
+    <div class="btn-holder container">
+        <button class="btn-sel" role="button" id="rock" type="button">Rock</button>
+        <button class="btn-sel" role="button" id="paper" type="button">Paper</button>
+        <button class="btn-sel" role="button" id="scissor" type="button">Scissor</button>
+    </div>
+    <div class="result-box">
+        <h2 class="result-text">RESULT</h2>
+    </div>
 </body>
 </html>

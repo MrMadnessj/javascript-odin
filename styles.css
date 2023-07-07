@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.title{
+    text-align: center;
+    color: antiquewhite;
+}
+
+.btn-holder{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+    gap: 1rem;
+}
+
+.btn-sel{
+    border: 3px solid rgb(18, 103, 153);
+    padding: 4rem;
+    background-color: black;
+    color:white;
+    font-size: 3rem;
+    transition: ease-in;
+}
+
+.btn-sel:hover{
+    transition-duration: 0.5s;
+    border: 3px solid rgb(153, 45, 18);
+    border-radius: 10px;
+    padding: 5rem;
+    background-color: white;
+    color:black;
+    font-size: 3rem;
+}
+
+
+.result-box{
+    margin: auto;
+    text-align: center;
+}
+
+.result-text{
+    color: azure;
+}
