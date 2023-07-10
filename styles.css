@@ -15,9 +15,11 @@ body{
 
 .btn-holder{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 5rem;
-    gap: 1rem;
+    gap: 2rem;
+    max-width: 45rem;
+    margin: auto;
 }
 
 .btn-sel{
@@ -33,10 +35,11 @@ body{
     transition-duration: 0.5s;
     border: 3px solid rgb(153, 45, 18);
     border-radius: 10px;
-    padding: 5rem;
     background-color: white;
     color:black;
     font-size: 3rem;
+    cursor: pointer;
+    transform: scale(0.95);
 }
 
 
@@ -48,3 +51,42 @@ body{
 .result-text{
     color: azure;
 }
+
+h2, span{
+    color:white;
+}
+
+.result-text{
+    text-align: center;
+}
+
+.result-box{
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    padding: 2rem;
+}
+
+.score-plr{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.score-comp{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.bigboy{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10rem;
+    font-size: 1.7rem;
+    padding-right: 2rem;
+}
+
